@@ -1,0 +1,168 @@
+/**
+ * Load More Plugin - Admin Styles
+ *
+ * @package LoadMorePlugin
+ * @since 1.0.0
+ */
+
+/* ========================================
+   Settings Page
+   ======================================== */
+
+.load-more-settings-wrap {
+    max-width: 1200px;
+}
+
+.load-more-settings-wrap h1 {
+    margin-bottom: 20px;
+}
+
+.load-more-settings-wrap .form-table {
+    margin-top: 20px;
+}
+
+.load-more-settings-wrap .form-table th {
+    width: 250px;
+    padding: 20px 10px 20px 0;
+    vertical-align: top;
+}
+
+.load-more-settings-wrap .form-table td {
+    padding: 20px 10px;
+}
+
+.load-more-settings-wrap .description {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ========================================
+   Settings Sections
+   ======================================== */
+
+.load-more-settings-wrap h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0073aa;
+    color: #23282d;
+}
+
+.load-more-settings-wrap h2:first-of-type {
+    margin-top: 0;
+}
+
+/* ========================================
+   Form Fields
+   ======================================== */
+
+.load-more-settings-wrap input[type="text"],
+.load-more-settings-wrap input[type="number"],
+.load-more-settings-wrap select,
+.load-more-settings-wrap textarea {
+    font-size: 14px;
+}
+
+.load-more-settings-wrap input[type="number"] {
+    width: 100px;
+}
+
+.load-more-settings-wrap textarea.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.load-more-settings-wrap label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* ========================================
+   Preview Container
+   ======================================== */
+
+.load-more-preview-container {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.load-more-preview h3 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 16px;
+    color: #23282d;
+    border: none;
+}
+
+.load-more-preview .preview-wrapper {
+    padding: 30px;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.load-more-preview .preview-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Preview Button Styles */
+.load-more-preview .preview-btn.load-more-btn-default {
+    background-color: #0073aa;
+    color: #ffffff;
+    border-color: #0073aa;
+}
+
+.load-more-preview .preview-btn.load-more-btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+.load-more-preview .preview-btn.load-more-btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border-color: #6c757d;
+}
+
+.load-more-preview .preview-btn.load-more-btn-outline {
+    background-color: transparent;
+    color: #0073aa;
+    border-color: #0073aa;
+}
+
+.load-more-preview .preview-btn.load-more-btn-custom {
+    background-color: #28a745;
+    color: #ffffff;
+    border-color: #28a745;
+}
+
+/* ========================================
+   Submit Button
+   ======================================== */
+
+.load-more-settings-wrap .submit {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+

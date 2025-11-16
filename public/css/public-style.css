@@ -1,0 +1,352 @@
+/**
+ * Load More Plugin - Public Styles
+ *
+ * @package LoadMorePlugin
+ * @since 1.0.0
+ */
+
+/* ========================================
+   Load More Content Wrapper
+   ======================================== */
+
+.load-more-content-wrapper {
+    position: relative;
+    margin: 20px 0;
+}
+
+.load-more-visible-content,
+.load-more-hidden-content,
+.load-more-section,
+.load-more-progressive-section {
+    line-height: 1.6;
+}
+
+/* Progressive mode specific styles (one button, loads X words each click) */
+.load-more-progressive-mode .load-more-visible-content {
+    display: inline;
+}
+
+.load-more-progressive-mode .load-more-progressive-section {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.load-more-progressive-mode .load-more-button-wrapper {
+    display: block;
+    margin: 20px 0;
+    clear: both;
+}
+
+/* ========================================
+   Button Wrapper
+   ======================================== */
+
+.load-more-button-wrapper,
+.load-more-pagination-wrapper {
+    margin: 30px 0;
+    padding: 20px 0;
+    clear: both;
+}
+
+.load-more-button-wrapper.align-left,
+.load-more-pagination-wrapper.align-left {
+    text-align: left;
+}
+
+.load-more-button-wrapper.align-center,
+.load-more-pagination-wrapper.align-center {
+    text-align: center;
+}
+
+.load-more-button-wrapper.align-right,
+.load-more-pagination-wrapper.align-right {
+    text-align: right;
+}
+
+/* ========================================
+   Load More Button Base Styles
+   ======================================== */
+
+.load-more-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.load-more-btn:focus {
+    outline: 2px solid rgba(0, 123, 255, 0.5);
+    outline-offset: 2px;
+}
+
+.load-more-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ========================================
+   Button Style Variants
+   ======================================== */
+
+/* Default Style */
+.load-more-btn-default {
+    background-color: #0073aa;
+    color: #ffffff;
+    border-color: #0073aa;
+}
+
+.load-more-btn-default:hover:not(:disabled) {
+    background-color: #005a87;
+    border-color: #005a87;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 115, 170, 0.3);
+}
+
+.load-more-btn-default:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 115, 170, 0.3);
+}
+
+/* Primary Style */
+.load-more-btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+.load-more-btn-primary:hover:not(:disabled) {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.load-more-btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Secondary Style */
+.load-more-btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border-color: #6c757d;
+}
+
+.load-more-btn-secondary:hover:not(:disabled) {
+    background-color: #545b62;
+    border-color: #545b62;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.3);
+}
+
+.load-more-btn-secondary:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(108, 117, 125, 0.3);
+}
+
+/* Outline Style */
+.load-more-btn-outline {
+    background-color: transparent;
+    color: #0073aa;
+    border-color: #0073aa;
+}
+
+.load-more-btn-outline:hover:not(:disabled) {
+    background-color: #0073aa;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 115, 170, 0.2);
+}
+
+.load-more-btn-outline:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 115, 170, 0.2);
+}
+
+/* ========================================
+   Loading State
+   ======================================== */
+
+.load-more-btn.loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+}
+
+.load-more-btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: load-more-spinner 0.6s linear infinite;
+}
+
+@keyframes load-more-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================================
+   Messages
+   ======================================== */
+
+.load-more-message {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.load-more-message-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.load-more-message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.load-more-message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* ========================================
+   Post Styles
+   ======================================== */
+
+.load-more-post {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.load-more-post:last-child {
+    border-bottom: none;
+}
+
+.load-more-post .entry-header {
+    margin-bottom: 15px;
+}
+
+.load-more-post .entry-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.load-more-post .entry-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.load-more-post .entry-title a:hover {
+    color: #0073aa;
+}
+
+.load-more-post .entry-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.load-more-post .entry-meta span {
+    margin-right: 15px;
+}
+
+.load-more-post .post-thumbnail {
+    margin-bottom: 20px;
+}
+
+.load-more-post .post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.load-more-post .entry-content {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.load-more-post .entry-footer .read-more {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #0073aa;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-post .entry-footer .read-more:hover {
+    background-color: #005a87;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media screen and (max-width: 768px) {
+    .load-more-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .load-more-post .entry-title {
+        font-size: 20px;
+    }
+
+    .load-more-button-wrapper,
+    .load-more-pagination-wrapper {
+        margin: 20px 0;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .load-more-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .load-more-button-wrapper.align-left,
+    .load-more-button-wrapper.align-right,
+    .load-more-pagination-wrapper.align-left,
+    .load-more-pagination-wrapper.align-right {
+        text-align: center;
+    }
+}
+
